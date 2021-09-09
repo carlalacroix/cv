@@ -38,11 +38,9 @@ header nav ul li img, footer nav ul li img{
 }
 
 #about > div{
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    display: block;
     width: 70%;
+    height: auto;
 }
 
 #about #slideshow{
@@ -99,4 +97,9 @@ header nav ul li img, footer nav ul li img{
 
 #contact div p{
     font-size: 0.8rem;
+}
+
+#contact h1{
+    left: 4%;
+    margin-left: 0px;
 }
