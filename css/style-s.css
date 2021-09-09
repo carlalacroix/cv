@@ -1,4 +1,4 @@
-body, html{
+/*body, html{
     overflow-x: hidden;
 }
 
@@ -60,6 +60,106 @@ header nav ul li img, footer nav ul li img{
 }
 
 #inspiration > div{
+    grid-template-columns: 50% 50%;
+    width: 80%;
+    padding: 8vh 1% 5vh 6%;
+}
+
+#inspiration .slideshowInspi1, #inspiration .slideshowInspi2, #inspiration .slideshowInspi3, #inspiration .slideshowInspi4, #inspiration .slideshowInspi5, #inspiration .slideshowInspi6{
+    height: auto;
+}
+
+#inspiration .slideshowInspi1 > figure img, #inspiration .slideshowInspi2 > figure img, #inspiration .slideshowInspi3 > figure img, #inspiration .slideshowInspi4 > figure img, #inspiration .slideshowInspi5 > figure img, #inspiration .slideshowInspi6 > figure img{
+    height: auto;
+    width: 100%;
+}
+
+#contact div{
+    left: 55%;
+}
+
+#contact div a{
+    letter-spacing: 3px;
+    font-size: 0.7rem;
+}
+
+#contact div p{
+    font-size: 0.8rem;
+}*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+body, html{
+    overflow-x: hidden;
+}
+
+header nav ul li, footer nav ul li{
+    font-size: 0.7rem;
+}
+
+header nav ul li img, footer nav ul li img{
+    width: 80%;
+    height: 7vh;
+}
+
+#home{
+    height: 80vh;
+}
+
+#home h1{
+    margin-top: 10vh;
+}
+
+#home figure img{
+    height: 100%;
+}
+
+#home a{
+    width: 60%;
+    text-align: center;
+}
+
+#about h1, #contact h1, #inspiration h1{
+    width: 0px;
+    font-size: 1.7rem;
+}
+
+#about > div{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 70%;
+}
+
+#about #slideshow{
+    width: 230px;
+    height: 230px;
+    margin: 5vh 0px;
+}
+
+#about p{
+    width: 230px;
+    margin-left: 0px;
+    font-size: 0.75rem;
+}
+
+#cv{
+    height: auto;
+}
+
+#cv img{
+    width: 100%;
+    height: auto;
+}
+
+#inspiration > div{
+    -ms-grid-columns: 50% 50%;
     grid-template-columns: 50% 50%;
     width: 80%;
     padding: 8vh 1% 5vh 6%;
