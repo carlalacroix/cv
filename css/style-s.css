@@ -12,7 +12,13 @@ header nav ul li img, footer nav ul li img{
 }
 
 #home{
-    height: 85vh;
+    min-height: 85vh;
+    height: auto;
+}
+
+#about, #inspiration, #contact{
+    min-height: 100vh;
+    height: auto;
 }
 
 #home h1{

@@ -1,0 +1,115 @@
+body, html{
+    overflow-x: hidden;
+}
+
+header nav ul li, footer nav ul li{
+    font-size: 0.8rem;
+}
+
+header nav ul li img, footer nav ul li img{
+    width: 80%;
+    height: 7vh;
+}
+
+#home{
+    min-height: 85vh;
+    height: auto;
+}
+
+#about, #inspiration, #contact{
+    min-height: 100vh;
+    height: auto;
+}
+
+#home h1{
+    margin-top: 5vh;
+}
+
+#home figure img{
+    height: 100%;
+}
+
+#home a{
+    width: 60%;
+    text-align: center;
+}
+
+#about h1, #contact h1, #inspiration h1{
+    width: 0px;
+    font-size: 1.8rem;
+}
+
+#about{
+    min-height: 100vh;
+}
+
+#about > div{
+    display: block;
+    width: 70%;
+    min-height: 50vh;
+    margin-top: 50%;
+}
+
+#about #slideshow{
+    width: 380px;
+    height: 380px;
+    margin: 5vh 50%;
+    transform: translateX(-50%);
+}
+
+#about p{
+    width: 380px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.95rem;
+}
+
+#cv{
+    height: auto;
+}
+
+#cv img{
+    width: 100%;
+    height: auto;
+}
+
+#inspiration > div{
+    -ms-grid-columns: 50% 50%;
+    grid-template-columns: 45% 45%;
+    justify-content: center;
+    width: 90%;
+    padding: 8vh 1% 5vh 6%;
+}
+
+#inspiration .slideshowInspi1, #inspiration .slideshowInspi2, #inspiration .slideshowInspi3, #inspiration .slideshowInspi4, #inspiration .slideshowInspi5, #inspiration .slideshowInspi6{
+    min-height: 27vh;
+    width: 100%;
+    margin-bottom: 5vh;
+}
+
+#inspiration .slideshowInspi1 > figure, #inspiration .slideshowInspi2 > figure, #inspiration .slideshowInspi3 > figure, #inspiration .slideshowInspi4 > figure, #inspiration .slideshowInspi5 > figure, #inspiration .slideshowInspi6 > figure{
+    width: 90%;
+}
+
+#inspiration .slideshowInspi1 > figure img, #inspiration .slideshowInspi2 > figure img, #inspiration .slideshowInspi3 > figure img, #inspiration .slideshowInspi4 > figure img, #inspiration .slideshowInspi5 > figure img, #inspiration .slideshowInspi6 > figure img{
+    min-height: 27vh;
+    width: 100%;
+}
+
+#contact div{
+    left: 55%;
+}
+
+#contact div a{
+    letter-spacing: 8px;
+    font-size: 0.8rem;
+}
+
+#contact div p{
+    font-size: 0.9rem;
+}
+
+#contact h1{
+    left: 4%;
+    margin-left: 0px;
+}
