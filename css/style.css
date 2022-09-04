@@ -66,17 +66,23 @@ header nav ul li img, footer nav ul li img{
 #home figure{
 	position: relative;
 	margin: 0px;
+	width: 25vw;
+	height: 25vw;
+	margin: auto;
 }
 
 #home figure img{
 	margin: auto;
-	-o-object-fit: contain;
-	   object-fit: contain;
+	-o-object-fit: cover;
+	   object-fit: cover;
 	width: 100%;
 	height: 60vh;
 	-webkit-transform: scaleX(-1);
   	-ms-transform: scaleX(-1);
 	    transform: scaleX(-1);
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
 }
 
 #home a{
@@ -91,7 +97,9 @@ header nav ul li img, footer nav ul li img{
 	overflow: hidden;
 }
 
-#home a::before {
+
+/***** ANIMATION BOUTON "QUI JE SUIS" *****/
+/*#home a::before {
 	content: '';
 	position: absolute;
 	top: 0px;
@@ -124,6 +132,7 @@ header nav ul li img, footer nav ul li img{
 	-webkit-animation: 2s animateTop linear infinite;
 			animation: 2s animateTop linear infinite;
   }
+  */
   
   @-webkit-keyframes animateTop {
 	0% {
@@ -259,10 +268,12 @@ header nav ul li img, footer nav ul li img{
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
 	margin: 0px;
-	background: rgba(184, 183, 183, 0.2)
+	background: rgba(219,216,209,255);
+	/*background: rgba(219,216,209,255);*/
+	margin-bottom: 1px;
 }
 
-#about h1, #contact h1, #inspiration h1{
+#about h1, #contact h1, #inspiration h1, .travaux h1, .diy h1{
 	-webkit-writing-mode: vertical-rl;
 	    -ms-writing-mode: tb-rl;
 	        writing-mode: vertical-rl;
@@ -276,9 +287,24 @@ header nav ul li img, footer nav ul li img{
 	margin-left: 4%;
 }
 
+.travaux h2 {
+	-webkit-writing-mode: vertical-rl;
+	-ms-writing-mode: tb-rl;
+	writing-mode: vertical-rl;
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 0.8rem;
+	letter-spacing: 8px;
+	margin: 0;
+	font-style: oblique;
+}
+
 #about > div{
 	width: 60%;
-	height: 100vh;
+	min-height: 100vh;
 	margin: auto;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -321,10 +347,38 @@ header nav ul li img, footer nav ul li img{
 #cv{
 	width: 100%;
 	height: 100vh;
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(84,84,84,1)), color-stop(30%, rgba(255,255,255,1)));
-	background: -o-linear-gradient(top, rgba(84,84,84,1) 29.3%, rgba(255,255,255,1) 29.4%);
-	background: linear-gradient(180deg, rgba(84,84,84,1) 29.3%, rgba(255,255,255,1) 29.4%);
+	position: relative;
+	/*background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(219,216,209,255)), color-stop(30%, rgba(255,255,255,1)));*/
+	/*background: -o-linear-gradient(top, rgba(219,216,209,255) 29.3%, rgba(255,255,255,1) 29.4%);*/
+	/*background: linear-gradient(180deg, rgba(219,216,209,255) 29.3%, rgba(255,255,255,1) 29.4%);*/
 }
+
+#cv > div:first-of-type {
+	position: absolute;
+	width: 100%;
+	height: 29.9vh;
+	background: #DBD8D1;
+	top: 0;
+	left: 0;
+}
+
+/*#cv > span {*/
+/*	position: absolute;*/
+/*	display: block;*/
+/*	width: 10%;*/
+/*	height: 100%;*/
+/*	background: #DBD8D1;*/
+/*}*/
+
+/*#cv > span:first-of-type {*/
+/*	top: 0;*/
+/*	left: 0;*/
+/*}*/
+
+/*#cv > span:last-of-type {*/
+/*	top: 0;*/
+/*	right: 0;*/
+/*}*/
 
 #cv img{
 	height: 100vh;
@@ -335,8 +389,8 @@ header nav ul li img, footer nav ul li img{
 	        transform: translateX(-50%);
 }
 
-#inspiration{
-	height: 100vh;
+#inspiration, .travaux, .diy{
+	min-height: 100vh;
 	width: 100%;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -348,32 +402,63 @@ header nav ul li img, footer nav ul li img{
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	background: rgba(184, 183, 183, 0.2);
+	background: rgba(219,216,209,255);
 }
 
-#inspiration > div{
+.travaux {
+	background: white;
+}
+
+.travaux-separator {
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: #DBD8D1;
+}
+
+#inspiration > div, .travaux > div, .diy > div{
 	display: -ms-grid;
 	display: grid;
-	-ms-grid-columns: 30% 30% 30%;
-	grid-template-columns: 30% 30% 30%;
+	-ms-grid-columns: 33.3% 33.3% 33.3%;
+	grid-template-columns: 33.3% 33.3% 33.3%;
 	padding: 5vh 5%;
-	width: 70%;
+	width: 75%;
 }
 
-#inspiration .slideshowInspi1, #inspiration .slideshowInspi2, #inspiration .slideshowInspi3, #inspiration .slideshowInspi4, #inspiration .slideshowInspi5, #inspiration .slideshowInspi6 { 
+.diy {
+	background: white;
+}
+
+#inspiration .slideshowInspi1, #inspiration .slideshowInspi2, #inspiration .slideshowInspi3, #inspiration .slideshowInspi4, #inspiration .slideshowInspi5, #inspiration .slideshowInspi6,
+.travaux .slideshowTravaux1, .travaux .slideshowTravaux2, .travaux .slideshowTravaux3, .travaux .slideshowTravaux4, .travaux .slideshowTravaux5, .travaux .slideshowTravaux6,
+.diy .slideshowDiy1, .diy .slideshowDiy2, .diy .slideshowDiy3, .diy .slideshowDiy4, .diy .slideshowDiy5, .diy .slideshowDiy6
+{
 	position: relative; 
 	width: 90%; 
-	height: 40vh;
+	height: 50vh;
+	margin: auto;
 }
   
-#inspiration .slideshowInspi1 > figure, #inspiration .slideshowInspi2 > figure, #inspiration .slideshowInspi3 > figure, #inspiration .slideshowInspi4 > figure, #inspiration .slideshowInspi5 > figure, #inspiration .slideshowInspi6 > figure { 
+#inspiration .slideshowInspi1 > figure, #inspiration .slideshowInspi2 > figure, #inspiration .slideshowInspi3 > figure, #inspiration .slideshowInspi4 > figure, #inspiration .slideshowInspi5 > figure, #inspiration .slideshowInspi6 > figure,
+.travaux .slideshowTravaux1 > figure, .travaux .slideshowTravaux2 > figure, .travaux .slideshowTravaux3 > figure, .travaux .slideshowTravaux4 > figure, .travaux .slideshowTravaux5 > figure, .travaux .slideshowTravaux6 > figure,
+.diy .slideshowDiy1 > figure, .diy .slideshowDiy2 > figure, .diy .slideshowDiy3 > figure, .diy .slideshowDiy4 > figure, .diy .slideshowDiy5 > figure, .diy .slideshowDiy6 > figure
+{
 	position: absolute; 
-	margin: 0px;
+	width: 80%;
+	height: 85%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
 }
 
-#inspiration .slideshowInspi1 > figure img, #inspiration .slideshowInspi2 > figure img, #inspiration .slideshowInspi3 > figure img, #inspiration .slideshowInspi4 > figure img, #inspiration .slideshowInspi5 > figure img, #inspiration .slideshowInspi6 > figure img{
+#inspiration .slideshowInspi1 > figure img, #inspiration .slideshowInspi2 > figure img, #inspiration .slideshowInspi3 > figure img, #inspiration .slideshowInspi4 > figure img, #inspiration .slideshowInspi5 > figure img, #inspiration .slideshowInspi6 > figure img,
+.travaux .slideshowTravaux1 > figure img, .travaux .slideshowTravaux2 > figure img, .travaux .slideshowTravaux3 > figure img, .travaux .slideshowTravaux4 > figure img, .travaux .slideshowTravaux5 > figure img, .travaux .slideshowTravaux6 > figure img,
+.diy .slideshowDiy1 > figure img, .diy .slideshowDiy2 > figure img, .diy .slideshowDiy3 > figure img, .diy .slideshowDiy4 > figure img, .diy .slideshowDiy5 > figure img, .diy .slideshowDiy6 > figure img
+{
 	width: 100%;
-	height: 40vh;
+	height: 100%;
 	-o-object-fit: cover;
 	   object-fit: cover;
 }
@@ -383,7 +468,8 @@ header nav ul li img, footer nav ul li img{
 	width: 100%;
 	height: 90vh;
 	margin: auto;
-	
+	background: white;
+	/*background: rgba(219,216,209,255);*/
 }
 
 #contact h1{

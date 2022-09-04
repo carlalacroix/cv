@@ -16,13 +16,18 @@ header nav ul li img, footer nav ul li img{
     height: auto;
 }
 
-#about, #inspiration, #contact{
+#about, #inspiration, #contact, .travaux, .diy{
     min-height: 100vh;
     height: auto;
 }
 
 #home h1{
     margin-top: 5vh;
+}
+
+#home figure {
+    width: 40vw;
+    height: 40vw;
 }
 
 #home figure img{
@@ -34,9 +39,14 @@ header nav ul li img, footer nav ul li img{
     text-align: center;
 }
 
-#about h1, #contact h1, #inspiration h1{
+#about h1, #contact h1, #inspiration h1, .travaux h1, .diy h1{
     width: 0px;
     font-size: 1.8rem;
+}
+
+.travaux h2{
+    font-size: 0.7rem;
+    margin-left: 20px;
 }
 
 #about{
@@ -47,7 +57,7 @@ header nav ul li img, footer nav ul li img{
     display: block;
     width: 70%;
     min-height: 50vh;
-    margin-top: 50%;
+    /*margin-top: 50%;*/
 }
 
 #about #slideshow{
@@ -62,6 +72,7 @@ header nav ul li img, footer nav ul li img{
     margin-left: 50%;
     transform: translateX(-50%);
     font-size: 0.95rem;
+    margin-bottom: 5%;
 }
 
 #cv{
@@ -73,25 +84,34 @@ header nav ul li img, footer nav ul li img{
     height: auto;
 }
 
-#inspiration > div{
+#inspiration > div, .travaux > div, .diy > div{
     -ms-grid-columns: 50% 50%;
     grid-template-columns: 45% 45%;
     justify-content: center;
     width: 90%;
-    padding: 8vh 1% 5vh 6%;
+    padding: 5vh 1% 8vh 6%;
 }
 
-#inspiration .slideshowInspi1, #inspiration .slideshowInspi2, #inspiration .slideshowInspi3, #inspiration .slideshowInspi4, #inspiration .slideshowInspi5, #inspiration .slideshowInspi6{
+#inspiration .slideshowInspi1, #inspiration .slideshowInspi2, #inspiration .slideshowInspi3, #inspiration .slideshowInspi4, #inspiration .slideshowInspi5, #inspiration .slideshowInspi6,
+.travaux .slideshowTravaux1, .travaux .slideshowTravaux2, .travaux .slideshowTravaux3, .travaux .slideshowTravaux4, .travaux .slideshowTravaux5, .travaux .slideshowTravaux6,
+.diy .slideshowDiy1, .diy .slideshowDiy2, .diy .slideshowDiy3, .diy .slideshowDiy4, .diy .slideshowDiy5, .diy .slideshowDiy6
+{
     min-height: 27vh;
     width: 100%;
     margin-bottom: 5vh;
 }
 
-#inspiration .slideshowInspi1 > figure, #inspiration .slideshowInspi2 > figure, #inspiration .slideshowInspi3 > figure, #inspiration .slideshowInspi4 > figure, #inspiration .slideshowInspi5 > figure, #inspiration .slideshowInspi6 > figure{
+#inspiration .slideshowInspi1 > figure, #inspiration .slideshowInspi2 > figure, #inspiration .slideshowInspi3 > figure, #inspiration .slideshowInspi4 > figure, #inspiration .slideshowInspi5 > figure, #inspiration .slideshowInspi6 > figure,
+.travaux .slideshowTravaux1 > figure, .travaux .slideshowTravaux2 > figure, .travaux .slideshowTravaux3 > figure, .travaux .slideshowTravaux4 > figure, .travaux .slideshowTravaux5 > figure, .travaux .slideshowTravaux6 > figure,
+.diy .slideshowDiy1 > figure, .diy .slideshowDiy2 > figure, .diy .slideshowDiy3 > figure, .diy .slideshowDiy4 > figure, .diy .slideshowDiy5 > figure, .diy .slideshowDiy6 > figure
+{
     width: 90%;
 }
 
-#inspiration .slideshowInspi1 > figure img, #inspiration .slideshowInspi2 > figure img, #inspiration .slideshowInspi3 > figure img, #inspiration .slideshowInspi4 > figure img, #inspiration .slideshowInspi5 > figure img, #inspiration .slideshowInspi6 > figure img{
+#inspiration .slideshowInspi1 > figure img, #inspiration .slideshowInspi2 > figure img, #inspiration .slideshowInspi3 > figure img, #inspiration .slideshowInspi4 > figure img, #inspiration .slideshowInspi5 > figure img, #inspiration .slideshowInspi6 > figure img,
+.travaux .slideshowTravaux1 > figure img, .travaux .slideshowTravaux2 > figure img, .travaux .slideshowTravaux3 > figure img, .travaux .slideshowTravaux4 > figure img, .travaux .slideshowTravaux5 > figure img, .travaux .slideshowTravaux6 > figure img,
+.diy .slideshowDiy1 > figure img, .diy .slideshowDiy2 > figure img, .diy .slideshowDiy3 > figure img, .diy .slideshowDiy4 > figure img, .diy .slideshowDiy5 > figure img, .diy .slideshowDiy6 > figure img
+{
     min-height: 27vh;
     width: 100%;
 }
