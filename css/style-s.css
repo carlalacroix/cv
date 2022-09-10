@@ -68,13 +68,17 @@ header .hide-responsive, footer .hide-responsive {
     width: 230px;
     height: 230px;
     margin: 5vh 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 
 #about p{
     width: 230px;
     margin-left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     font-size: 0.75rem;
 }
 
@@ -90,7 +94,9 @@ header .hide-responsive, footer .hide-responsive {
 #inspiration > div, .travaux > div, .diy > div{
     -ms-grid-columns: 50% 50%;
     grid-template-columns: 45% 45%;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 90%;
     padding: 5vh 1% 8vh 6%;
 }
