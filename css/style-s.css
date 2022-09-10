@@ -129,7 +129,7 @@ header .hide-responsive, footer .hide-responsive {
 .travaux .slideshowTravaux1 > figure img, .travaux .slideshowTravaux2 > figure img, .travaux .slideshowTravaux3 > figure img, .travaux .slideshowTravaux4 > figure img, .travaux .slideshowTravaux5 > figure img, .travaux .slideshowTravaux6 > figure img,
 .diy .slideshowDiy1 > figure img, .diy .slideshowDiy2 > figure img, .diy .slideshowDiy3 > figure img, .diy .slideshowDiy4 > figure img, .diy .slideshowDiy5 > figure img, .diy .slideshowDiy6 > figure img
 {
-    height: 27vh;
+    height: 100%;
     width: 100%;
 }
 
