@@ -113,16 +113,12 @@ header .hide-responsive, footer .hide-responsive {
     margin: 10px 0;
 }
 
-#inspiration .slideshowInspi1, #inspiration .slideshowInspi2, #inspiration .slideshowInspi3, #inspiration .slideshowInspi4, #inspiration .slideshowInspi5, #inspiration .slideshowInspi6,
-.travaux .slideshowTravaux1 > figure, .travaux .slideshowTravaux2 > figure, .travaux .slideshowTravaux3 > figure, .travaux .slideshowTravaux4 > figure, .travaux .slideshowTravaux5 > figure, .travaux .slideshowTravaux6 > figure {
-    height: 100%;   
-}
-
 #inspiration .slideshowInspi1 > figure, #inspiration .slideshowInspi2 > figure, #inspiration .slideshowInspi3 > figure, #inspiration .slideshowInspi4 > figure, #inspiration .slideshowInspi5 > figure, #inspiration .slideshowInspi6 > figure,
 .travaux .slideshowTravaux1 > figure, .travaux .slideshowTravaux2 > figure, .travaux .slideshowTravaux3 > figure, .travaux .slideshowTravaux4 > figure, .travaux .slideshowTravaux5 > figure, .travaux .slideshowTravaux6 > figure,
 .diy .slideshowDiy1 > figure, .diy .slideshowDiy2 > figure, .diy .slideshowDiy3 > figure, .diy .slideshowDiy4 > figure, .diy .slideshowDiy5 > figure, .diy .slideshowDiy6 > figure
 {
     width: 90%;
+    height: 100%; 
 }
 
 #inspiration .slideshowInspi1 > figure img, #inspiration .slideshowInspi2 > figure img, #inspiration .slideshowInspi3 > figure img, #inspiration .slideshowInspi4 > figure img, #inspiration .slideshowInspi5 > figure img, #inspiration .slideshowInspi6 > figure img,
